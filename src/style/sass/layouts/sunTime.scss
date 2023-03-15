@@ -1,0 +1,21 @@
+@mixin sunTime($gridArea) {
+    .sunTime {
+        grid-area: $gridArea;
+
+        @include flexEixoY;
+
+        .head-sun {
+            @include flexEixoX;
+
+            .h2-sun {
+                @include font-16;
+
+                color:#E7E6FB;
+            }
+        }
+
+        .main-sun {
+            margin-bottom: 1rem;
+        }
+    }
+}

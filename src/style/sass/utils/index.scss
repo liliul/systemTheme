@@ -1,0 +1,18 @@
+%week {
+    background-color: #6D67D0;
+    border-radius: 10px;
+}
+
+@mixin flexEixoX {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3.4rem;
+}
+
+@mixin flexEixoY {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

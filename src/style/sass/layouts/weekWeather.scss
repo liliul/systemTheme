@@ -1,0 +1,38 @@
+@mixin weekWeather($gridArea) {
+    .weekWeather {
+        grid-area: $gridArea;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        place-items: center;
+
+        .days {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            .h-days {
+
+                .h3-days {
+                    @include font-14;
+
+                    color: #DAD8F7;
+                }
+            }
+
+            .foo-days {
+
+                .foo-p-days {
+                    @include font-16;
+
+                    color: #FFFFFF;
+
+                    .s-foo-days {
+                        @include font-14;
+                        color: #DAD8F7;
+                    }
+                }
+            }
+        }
+    }
+}
