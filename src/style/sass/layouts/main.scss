@@ -12,10 +12,18 @@
     .week {
         @extend %week;
     }
+
+    @include tempNow(unset);      
+
+    @include airQuality(unset);
+
+    @include sunTime(unset);
+
+    @include weekWeather(unset);
 }
 
 
-@media  screen and(min-width: 1150px) {
+@media  screen and(min-width: 880px) {
     .container {
         max-width: 1366px;
         max-height: 768px;
