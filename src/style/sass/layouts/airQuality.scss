@@ -7,12 +7,19 @@
         .head-air {
             @include flexEixoX;
 
+            .icon-air {
+                svg {
+                    path {
+                        fill: var(--icon-air-sun);
+                    }
+                }
+            }
             
 
             .h2-air {
                 @include font-16;
 
-                color:#E7E6FB;
+                color: var(--head-air-sun);
             }
         }
 
@@ -23,13 +30,13 @@
             .p-main-air {
                 @include font-18;
 
-                color: #87EBCD;
+                color: var(--air-p-num);
             }
 
             .stg-main-air {
                 @include font-40;
 
-                color: #E7E6FB;
+                color: var(--air-strong-info);
             }
         }
 
@@ -46,11 +53,11 @@
                 .p-info-num {
                     @include font-14;
 
-                    color: #87EBCD;
+                    color: var(--air-p-num);
                 }
                 .span-info-num {
                     text-align: center;
-                    color: #E7E6FB;
+                    color: var(--air-strong-info);
 
                     @include font-12;
                 }

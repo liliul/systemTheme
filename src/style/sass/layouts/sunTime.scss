@@ -7,15 +7,29 @@
         .head-sun {
             @include flexEixoX;
 
+            .icon-sun {
+                svg {
+                    path {
+                        fill: var(--icon-air-sun)
+                    }
+                }
+            }
+
             .h2-sun {
                 @include font-16;
 
-                color:#E7E6FB;
+                color: var(--head-air-sun);
             }
         }
 
         .main-sun {
             margin-bottom: 1rem;
+
+            svg {
+                .icon-main-sun {
+                    fill: var(--icon-main-sun);
+                }
+            }
         }
     }
 }
