@@ -38,7 +38,7 @@ body.temaBlack {
   --img-bg:initial;
   --img-bg-tempNow: initial;
   --blur-bg: filter: blur(20px);
-  --bg-color: #000;
+  --bg-color: #000000f3;
   --bg-color-week: #212121;
   --shawdow-b-week: initial;
   --icon-head: #DAD8F7;
@@ -60,6 +60,85 @@ body.temaBlack {
   --s-foo-days:#DAD8F7;
 }
 
+body.massaRosa {
+  --img-bg: initial;
+  --img-bg-tempNow: initial;
+  --blur-bg: filter: blur(20px);
+  --bg-color: #ce7095 ;
+  --bg-color-week: #855e6e;
+  --shawdow-b-week: #f7f1e1;
+  --icon-head: #ffdbd7;
+  --text-city: #ffdbd7;
+  --h1-temp: #f7f1e1;
+  --span-temp: #f7f1e1;
+  --p-temp: #f7f1e1;
+  --bg-statistics: #ce7095;
+  --icon-statics: #ffdbd7;
+  --info-statics: #f7f1e1;
+  --span-info: #f7f1e1;
+  --icon-air-sun: #ffdbd7;
+  --head-air-sun: #ffdbd7;
+  --air-p-num: #ffb2c1;
+  --air-strong-info: #ce7095;
+  --icon-main-sun: #ffdbd7;
+  --h3-days: #ffb2c1;
+  --foo-p-days: #f7f1e1;
+  --s-foo-days:#ffdbd7;
+}
+
+body.sorvete {
+  --img-bg: initial;
+  --img-bg-tempNow: initial;
+  --blur-bg: filter: blur(20px);
+  --bg-color: #E7E6FB;
+  --bg-color-week: #05a1ad;
+  --shawdow-b-week: initial;
+  --icon-head: #4e031e;
+  --text-city: #5a4c6e;
+  --h1-temp: #5a4c6e;
+  --span-temp: #5d2d4e;
+  --p-temp: #5a4c6e;
+  --bg-statistics: #447390;
+  --icon-statics: #5d2d4e;
+  --info-statics: #4e031e;
+  --span-info: #4e031e;
+  --icon-air-sun: #4e031e;
+  --head-air-sun: #5a4c6e;
+  --air-p-num: #4e031e;
+  --air-strong-info: #5a4c6e;
+  --icon-main-sun: #4e031e;
+  --h3-days: #5d2d4e;
+  --foo-p-days: #4e031e;
+  --s-foo-days:#5a4c6e;
+}
+
+body.geleia {
+  --img-bg: url("../../assets/Background.png");
+  --img-bg-tempNow: initial;
+  --blur-bg: filter: blur(20px);
+  --bg-color: #6D67D0;
+  --bg-color-week: #ef3353;
+  --shawdow-b-week: #f4b036;
+  --img-nuvem-tempNow: initial;
+  --icon-head: #f4b036;
+  --text-city: #f4b036;
+  --h1-temp: #723e4e;
+  --span-temp: #b03851;
+  --p-temp: #723e4e;
+  --bg-statistics: #f4b036;
+  --icon-statics: #b03851;
+  --info-statics: #b03851;
+  --span-info: ;
+  --icon-air-sun: #f4b036;
+  --head-air-sun: #f4b036;
+  --air-p-num: #f17144;
+  --air-strong-info: #723e4e;
+  --icon-main-sun: #f4b036;
+  --h3-days: #723e4e;
+  --foo-p-days: #f4b036;
+  --s-foo-days:#f17144;
+}
+
 :root {
   --img-bg: url("../../assets/Background.png");
   --img-bg-tempNow: url("../../assets/bgnuvem.jpg");
@@ -67,6 +146,7 @@ body.temaBlack {
   --bg-color: initial;
   --bg-color-week: #6D67D0;
   --shawdow-b-week: initial;
+  --img-nuvem-tempNow: url("../../assets/nuvens.svg");
   --icon-head: #9D99E4;
   --text-city: #C2BFF4;
   --h1-temp: #FFFFFF;
@@ -127,7 +207,7 @@ body {
 .container .tempNow .head-tempNow .nuvens {
   width: 176px;
   height: 176px;
-  background-image: url("../../assets/nuvens.svg");
+  background-image: var(--img-nuvem-tempNow);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -369,7 +449,7 @@ body {
   .container .tempNow .head-tempNow .nuvens {
     width: 176px;
     height: 176px;
-    background-image: url("../../assets/nuvens.svg");
+    background-image: var(--img-nuvem-tempNow);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;

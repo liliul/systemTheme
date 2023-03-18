@@ -25,7 +25,7 @@
             .nuvens {
                 width: 176px;
                 height: 176px;
-                background-image: url('../../assets/nuvens.svg');
+                background-image: var(--img-nuvem-tempNow);
                 background-repeat: no-repeat;
                
                 background-size: contain;

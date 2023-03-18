@@ -1,5 +1,8 @@
 @import './dracula.scss';
 @import './temaBlack.scss';
+@import './massaRosa.scss';
+@import './sorvete.scss';
+@import './geleia.scss';
 
 :root {
     --img-bg: url('../../assets/Background.png');
@@ -11,6 +14,7 @@
 
     --shawdow-b-week: initial;
 
+    --img-nuvem-tempNow: url('../../assets/nuvens.svg');
     --icon-head: #9D99E4;
 
     --text-city: #C2BFF4;
