@@ -1,16 +1,17 @@
 import { guardarNoLocalStorage } from './localStorage.js';
 
-
 const selec = document.querySelector('#select')
 const body = document.querySelector('body')
 
+window.addEventListener('DOMContentLoaded', getTheme) 
 
-if (localStorage.TempThemes != body.className) {
- 
- body.classList.add(localStorage.TempThemes)
+function getTheme (event) {
+  event.preventDefault()
 
-   
-  if (localStorage.TempThemes) {
+  if ( localStorage.TempThemes ) {
+
+    body.classList.add(localStorage.TempThemes)
+     
     let op = document.createElement('option')
     op.setAttribute('selected','')
     op.setAttribute('disabled', '')
@@ -20,25 +21,20 @@ if (localStorage.TempThemes != body.className) {
     selec.appendChild(op)
   }
 }
-  
 
 selec.addEventListener('change', selected);
 
-function selected(e) {
-// console.log('onchange: ', this.value)
+function selected() {
+
  let isOptionsValue = selec.options[select.selectedIndex];
 
-
  let isText =  isOptionsValue.text;
-  console.log('isText',isText)
 
   guardarNoLocalStorage('TempThemes', isText)
   
-  console.log('selec', select)
-  for (const {text} of selec) {
-    console.log('res: ', text)   
+  for (const { text } of selec) {   
 
-    if (isText === text) {
+    if ( isText === text ) {
       body.className = ''; 
       body.classList.add(text)     
     } 
