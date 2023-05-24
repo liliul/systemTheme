@@ -26,7 +26,7 @@ selec.addEventListener('change', selected);
 
 function selected() {
 
- let isOptionsValue = selec.options[select.selectedIndex];
+ let isOptionsValue = selec.options[selec.selectedIndex];
 
  let isText =  isOptionsValue.text;
 
